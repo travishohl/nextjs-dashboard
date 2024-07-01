@@ -11,9 +11,9 @@ export default async function Page({
   searchParams,
 }: {
   searchParams?: {
-    page?: string,
-    query?: string,
-  }
+    page?: string;
+    query?: string;
+  };
 }) {
   const query = searchParams?.query || '';
   const currentPage = Number(searchParams?.page) || 1;

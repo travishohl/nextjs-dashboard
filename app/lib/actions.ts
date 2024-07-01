@@ -6,7 +6,7 @@ import { sql } from '@vercel/postgres';
 import { z } from 'zod';
 
 const FormSchema = z.object({
-  amount: z.coerce.number(), 
+  amount: z.coerce.number(),
   customerId: z.string(),
   date: z.string(),
   id: z.string(),
